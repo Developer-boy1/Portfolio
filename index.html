@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Abhishek Kr. Giri — R&D Full Stack Intern & AI Data Trainer. Projects, skills, education, certifications, achievements, and contact." />
+  <meta name="theme-color" content="#21808d" />
+  <title>Abhishek Kr. Giri - R&D Full Stack Intern & AI Data Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Custom Cursor (desktop only) -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading-screen" aria-hidden="true">
+    <div class="loading-logo">
+      <div class="logo-cube" aria-label="Loading">
+        <div class="cube-face cube-front">AK</div>
+        <div class="cube-face cube-back">AK</div>
+        <div class="cube-face cube-right">AK</div>
+        <div class="cube-face cube-left">AK</div>
+        <div class="cube-face cube-top">AK</div>
+        <div class="cube-face cube-bottom">AK</div>
+      </div>
+    </div>
+    <div class="loading-text">Loading experience...</div>
+    <div class="loading-progress" aria-hidden="true">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- Background Orbs & Particles -->
+  <div class="bg-shapes" aria-hidden="true">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-shape shape-4"></div>
+    <div class="floating-shape shape-5"></div>
+  </div>
+  <div id="particles" class="particles" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar glass-morph" id="navbar" role="navigation">
+    <div class="container">
+      <div class="nav-content">
+        <a href="#home" class="nav-brand logo-3d" aria-label="Go to home">
+          <span class="logo-text">Abhishek Kr. Giri</span>
+          <span class="logo-glow" aria-hidden="true"></span>
+        </a>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link magnetic active" data-text="Home">Home</a>
+          <a href="#about" class="nav-link magnetic" data-text="About">About</a>
+          <a href="#experience" class="nav-link magnetic" data-text="Experience">Experience</a>
+          <a href="#skills" class="nav-link magnetic" data-text="Skills">Skills</a>
+          <a href="#projects" class="nav-link magnetic" data-text="Projects">Projects</a>
+          <a href="#education" class="nav-link magnetic" data-text="Education">Education</a>
+          <a href="#achievements" class="nav-link magnetic" data-text="Achievements">Achievements</a>
+          <a href="#contact" class="nav-link magnetic" data-text="Contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle magnetic" id="theme-toggle" aria-label="Toggle theme">
+            <div class="toggle-orb"></div>
+          </button>
+          <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-progress" id="scroll-progress"></div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-greeting glitch" data-text="Hello World!">Hello World!</div>
+          <h1 class="hero-title">
+            <span class="title-line">I'm</span>
+            <span class="title-name gradient-text">Abhishek Kr. Giri</span>
+            <span class="title-role">R&D Full Stack Intern & AI Data Trainer</span>
+          </h1>
+          <p class="hero-description typewriter">Researching and developing innovative full-stack solutions while training AI systems with cutting-edge technologies</p>
+          <div class="hero-actions">
+            <button class="btn-3d btn-primary magnetic" data-text="Explore Work" data-scroll="#projects">
+              <span>Explore My Work</span>
+              <div class="btn-particles"></div>
+            </button>
+            <button class="btn-3d btn-secondary magnetic" data-text="Connect" data-scroll="#contact">
+              <span>Let's Connect</span>
+              <div class="btn-glow"></div>
+            </button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-card glass-morph">
+            <div class="avatar-3d">
+              <div class="avatar-ring ring-1"></div>
+              <div class="avatar-ring ring-2"></div>
+              <div class="avatar-ring ring-3"></div>
+              <div class="avatar-core">
+                <span class="avatar-emoji" aria-hidden="true">👨‍💻</span>
+              </div>
+            </div>
+            <div class="status-indicators">
+              <div class="status-dot" aria-hidden="true"></div>
+              <span>Available for projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <button class="scroll-indicator magnetic" data-scroll="#about" aria-label="Scroll to about">
+        <div class="scroll-text">Scroll to explore</div>
+        <div class="scroll-arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-point"></div>
+        </div>
+      </button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about section-padding" aria-label="About Me">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal-text">About Me</h2>
+        <p class="section-subtitle">Discover my journey in research, development, and AI technologies</p>
+      </div>
+      <div class="about-content">
+        <div class="about-visual">
+          <div class="profile-card glass-morph tilt-card">
+            <div class="profile-image">
+              <div class="image-frame">
+                <span class="profile-emoji" aria-hidden="true">🧑‍💼</span>
+                <div class="frame-glow"></div>
+              </div>
+            </div>
+            <div class="profile-stats">
+              <div class="stat-item">
+                <div class="stat-number counter" data-target="1">0</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number counter" data-target="7">0</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number counter" data-target="15">0</div>
+                <div class="stat-label">Technologies</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number counter" data-target="8">0</div>
+                <div class="stat-label">Certifications</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-info">
+          <div class="info-card glass-morph">
+            <p class="about-text">Innovative R&D Full Stack Intern and AI Data Trainer with expertise in modern web technologies and artificial intelligence. Currently working at Sonetel Software Solution Pvt. Ltd with completed B.Tech in Computer Science from Maharshi Dayanand University. Passionate about research, development, and creating cutting-edge software solutions.</p>
+            <div class="objective-section">
+              <h4>Career Objective</h4>
+              <p class="objective-text">Seeking an opportunity to contribute skills and expertise in a challenging and stimulating work environment. Eager to grow both personally and professionally with a strong focus on long-term career growth in full-stack development and AI technologies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience section-padding" aria-label="Professional Experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal-text">Professional Experience</h2>
+        <p class="section-subtitle">My career journey in technology and innovation</p>
+      </div>
+      <div class="experience-timeline">
+        <!-- Current Position -->
+        <div class="experience-item current-position magnetic" data-animate="slideInRight">
+          <div class="experience-dot current-dot"></div>
+          <div class="experience-card glass-morph">
+            <div class="experience-header">
+              <div class="experience-badge current-badge">Current Position</div>
+              <h3 class="experience-title">R&D Full Stack Intern</h3>
+              <div class="experience-company">
+                <div class="company-icon">🏢</div>
+                <span>Sonetel Software Solution Pvt. Ltd</span>
+              </div>
+              <div class="experience-duration">August 2025 - Present</div>
+              <div class="experience-location">Remote</div>
+            </div>
+            <div class="experience-content">
+              <p class="experience-description">Working on research and development of full-stack applications using modern web technologies. Contributing to innovative software solutions and gaining hands-on experience in enterprise-level development. Involved in exploring new technologies, prototyping solutions, and collaborating with development teams.</p>
+              <div class="experience-responsibilities">
+                <h5>Key Responsibilities:</h5>
+                <ul>
+                  <li>Research and development of full-stack web applications</li>
+                  <li>Prototyping innovative software solutions</li>
+                  <li>Collaboration with senior developers on enterprise projects</li>
+                  <li>Technology evaluation and implementation recommendations</li>
+                </ul>
+              </div>
+              <div class="experience-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Previous Position -->
+        <div class="experience-item previous-position magnetic" data-animate="slideInLeft">
+          <div class="experience-dot previous-dot"></div>
+          <div class="experience-card glass-morph">
+            <div class="experience-header">
+              <div class="experience-badge previous-badge">Previous Position</div>
+              <h3 class="experience-title">AI Data Trainer</h3>
+              <div class="experience-company">
+                <div class="company-icon">🤖</div>
+                <span>Invisible Technologies</span>
+              </div>
+              <div class="experience-duration">March 2025 - August 2025</div>
+              <div class="experience-location">Remote</div>
+            </div>
+            <div class="experience-content">
+              <p class="experience-description">Trained and optimized AI systems for improved performance and accuracy. Worked with machine learning models and data processing pipelines. Gained valuable experience in AI/ML technologies and data analysis.</p>
+              <div class="experience-responsibilities">
+                <h5>Key Responsibilities:</h5>
+                <ul>
+                  <li>Training and optimization of AI systems</li>
+                  <li>Data preprocessing and model evaluation</li>
+                  <li>Performance analysis and accuracy improvements</li>
+                  <li>Collaboration with AI research teams</li>
+                </ul>
+              </div>
+              <div class="experience-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Data Analysis</span>
+                <span class="tech-tag">AI Models</span>
+                <span class="tech-tag">TensorFlow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Line -->
+        <div class="timeline-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills section-padding" aria-label="Skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal-text">Technical Arsenal</h2>
+        <p class="section-subtitle">Technologies that power my innovative creations</p>
+      </div>
+      <div class="skills-container">
+        <div class="skills-tabs" role="tablist">
+          <button class="skill-tab active magnetic" data-category="frontend" role="tab" aria-selected="true">Frontend</button>
+          <button class="skill-tab magnetic" data-category="backend" role="tab" aria-selected="false">Backend</button>
+          <button class="skill-tab magnetic" data-category="tools" role="tab" aria-selected="false">Tools & Design</button>
+          <button class="skill-tab magnetic" data-category="soft" role="tab" aria-selected="false">Soft Skills</button>
+        </div>
+        <div class="skills-content">
+          <div class="skill-category active" data-category="frontend">
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">React</span><span class="skill-percentage">85%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="85"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-percentage">90%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="90"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">HTML5</span><span class="skill-percentage">95%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="95"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">CSS3</span><span class="skill-percentage">90%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="90"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">Bootstrap</span><span class="skill-percentage">80%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="80"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">jQuery</span><span class="skill-percentage">75%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="75"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+          </div>
+          <div class="skill-category" data-category="backend">
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">Java</span><span class="skill-percentage">85%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="85"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">Python</span><span class="skill-percentage">80%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="80"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">PHP</span><span class="skill-percentage">75%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="75"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">AI/ML</span><span class="skill-percentage">70%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="70"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+          </div>
+          <div class="skill-category" data-category="tools">
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">Figma</span><span class="skill-percentage">85%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="85"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">MySQL</span><span class="skill-percentage">80%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="80"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">Git</span><span class="skill-percentage">75%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="75"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">TypeScript</span><span class="skill-percentage">70%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="70"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+          </div>
+          <div class="skill-category" data-category="soft">
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">Leadership</span><span class="skill-percentage">90%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="90"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">Team Management</span><span class="skill-percentage">85%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="85"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">Problem Solving</span><span class="skill-percentage">90%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="90"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+            <div class="skill-item magnetic">
+              <div class="skill-info"><span class="skill-name">Communication</span><span class="skill-percentage">85%</span></div>
+              <div class="skill-bar-container"><div class="skill-bar" data-skill="85"><div class="skill-progress"></div><div class="skill-glow"></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects section-padding" aria-label="Projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal-text">Featured Projects</h2>
+        <p class="section-subtitle">Showcasing innovation and technical excellence</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 - Portfolio Website (Highlighted) -->
+        <div class="project-card glass-morph magnetic tilt-card featured-project">
+          <div class="project-image">
+            <div class="project-icon" aria-hidden="true">🌟</div>
+            <div class="project-overlay"><div class="overlay-content"><h3>Ultra-Modern Portfolio</h3><p>Cutting-edge 3D glassmorphism design</p></div></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header"><h3 class="project-title">Ultra-Modern Portfolio Website</h3><div class="project-status status-live">Live</div></div>
+            <p class="project-description">A cutting-edge personal portfolio website featuring 3D glassmorphism design, smooth animations, particle systems, and interactive elements. Built with vanilla JavaScript, advanced CSS animations, and modern web technologies to showcase technical expertise.</p>
+            <div class="project-tech"><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Canvas API</span><span class="tech-tag">3D CSS</span><span class="tech-tag">Glassmorphism</span></div>
+            <div class="project-links">
+              <a href="https://github.com/Developer-boy1/portfolio-website" target="_blank" class="project-link magnetic"><span>Repository</span><div class="link-arrow">→</div></a>
+              <a href="https://developer-boy1.github.io/portfolio-website/" target="_blank" class="project-link magnetic primary"><span>Live Demo</span><div class="link-arrow">→</div></a>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card glass-morph magnetic tilt-card">
+          <div class="project-image">
+            <div class="project-icon" aria-hidden="true">📚</div>
+            <div class="project-overlay"><div class="overlay-content"><h3>Book-Heaven</h3><p>E-commerce platform for books</p></div></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header"><h3 class="project-title">Book-Heaven (E-Book Store)</h3><div class="project-status status-live">Live</div></div>
+            <p class="project-description">A comprehensive e-commerce platform for books, featuring authentication, catalog, search, and secure payment processing.</p>
+            <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span></div>
+            <div class="project-links">
+              <a href="https://github.com/Developer-boy1/book-heaven" target="_blank" class="project-link magnetic"><span>Repository</span><div class="link-arrow">→</div></a>
+              <a href="https://github.com/Developer-boy1/book-heaven" target="_blank" class="project-link magnetic primary"><span>Open GitHub</span><div class="link-arrow">→</div></a>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card glass-morph magnetic tilt-card">
+          <div class="project-image">
+            <div class="project-icon" aria-hidden="true">🍰</div>
+            <div class="project-overlay"><div class="overlay-content"><h3>Baking Bowls</h3><p>Restaurant website with ordering</p></div></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header"><h3 class="project-title">Baking Bowls Restaurant</h3><div class="project-status status-live">Live</div></div>
+            <p class="project-description">Full-featured restaurant website with dynamic content, online ordering, and reviews. PHP backend and MySQL database.</p>
+            <div class="project-tech"><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span></div>
+            <div class="project-links">
+              <a href="https://github.com/Developer-boy1/baking-bowls" target="_blank" class="project-link magnetic"><span>Repository</span><div class="link-arrow">→</div></a>
+              <a href="https://github.com/Developer-boy1/baking-bowls" target="_blank" class="project-link magnetic primary"><span>Open GitHub</span><div class="link-arrow">→</div></a>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card glass-morph magnetic tilt-card">
+          <div class="project-image">
+            <div class="project-icon" aria-hidden="true">📊</div>
+            <div class="project-overlay"><div class="overlay-content"><h3>Spreadsheet Clone</h3><p>React & TypeScript spreadsheet</p></div></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header"><h3 class="project-title">Spreadsheet Clone</h3><div class="project-status status-live">Live</div></div>
+            <p class="project-description">Advanced spreadsheet app featuring formulas, visualization, and collaborative editing capabilities.</p>
+            <div class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span></div>
+            <div class="project-links">
+              <a href="https://github.com/Developer-boy1/spreadsheet-clone" target="_blank" class="project-link magnetic"><span>Repository</span><div class="link-arrow">→</div></a>
+              <a href="https://github.com/Developer-boy1/spreadsheet-clone" target="_blank" class="project-link magnetic primary"><span>Open GitHub</span><div class="link-arrow">→</div></a>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-card glass-morph magnetic tilt-card">
+          <div class="project-image">
+            <div class="project-icon" aria-hidden="true">🎮</div>
+            <div class="project-overlay"><div class="overlay-content"><h3>FUN-ZONE</h3><p>Gaming & streaming platform</p></div></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header"><h3 class="project-title">FUN-ZONE Gaming Platform</h3><div class="project-status status-dev">In Development</div></div>
+            <p class="project-description">Platform for gamers and streamers with profiles, communities, and streaming integration.</p>
+            <div class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">JavaScript</span><span class="tech-tag">CSS3</span><span class="tech-tag">HTML</span></div>
+            <div class="project-links">
+              <a href="https://github.com/Developer-boy1/fun-zone" target="_blank" class="project-link magnetic"><span>Repository</span><div class="link-arrow">→</div></a>
+              <a href="https://github.com/Developer-boy1/fun-zone" target="_blank" class="project-link magnetic primary"><span>Open GitHub</span><div class="link-arrow">→</div></a>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Project 6 -->
+        <div class="project-card glass-morph magnetic tilt-card">
+          <div class="project-image">
+            <div class="project-icon" aria-hidden="true">🎵</div>
+            <div class="project-overlay"><div class="overlay-content"><h3>Spotify Clone</h3><p>Music streaming app</p></div></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header"><h3 class="project-title">Spotify Clone</h3><div class="project-status status-live">Live</div></div>
+            <p class="project-description">Music streaming with playlists, search, and audio controls. Web Audio API based.</p>
+            <div class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">JavaScript</span><span class="tech-tag">CSS3</span><span class="tech-tag">Web Audio API</span></div>
+            <div class="project-links">
+              <a href="https://github.com/Developer-boy1/spotify-clone" target="_blank" class="project-link magnetic"><span>Repository</span><div class="link-arrow">→</div></a>
+              <a href="https://github.com/Developer-boy1/spotify-clone" target="_blank" class="project-link magnetic primary"><span>Open GitHub</span><div class="link-arrow">→</div></a>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Project 7 -->
+        <div class="project-card glass-morph magnetic tilt-card">
+          <div class="project-image">
+            <div class="project-icon" aria-hidden="true">📝</div>
+            <div class="project-overlay"><div class="overlay-content"><h3>Report Card Maker</h3><p>Educational grading tool</p></div></div>
+          </div>
+          <div class="project-content">
+            <div class="project-header"><h3 class="project-title">Report Card Maker</h3><div class="project-status status-live">Live</div></div>
+            <p class="project-description">Generate student report cards with automatic grade and percentage calculations and printable formats.</p>
+            <div class="project-tech"><span class="tech-tag">JavaScript</span><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">PDF.js</span></div>
+            <div class="project-links">
+              <a href="https://github.com/Developer-boy1/report-card-maker" target="_blank" class="project-link magnetic"><span>Repository</span><div class="link-arrow">→</div></a>
+              <a href="https://github.com/Developer-boy1/report-card-maker" target="_blank" class="project-link magnetic primary"><span>Open GitHub</span><div class="link-arrow">→</div></a>
+            </div>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="education section-padding" aria-label="Education">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal-text">Education</h2>
+        <p class="section-subtitle">Academic background and professional training</p>
+      </div>
+      <div class="education-grid">
+        <div class="edu-card glass-morph magnetic">
+          <h3>B. Tech in Computer Science & Engineering</h3>
+          <p class="edu-meta"><span>Maharshi Dayanand University</span> • <span>Rohtak, Haryana</span></p>
+          <p class="edu-duration">2021 - 2025 • Completed</p>
+        </div>
+        <div class="edu-card glass-morph magnetic">
+          <h3>Java Full Stack Development</h3>
+          <p class="edu-meta"><span>DUCAT IT Training Institute</span> • <span>Gurugram, Haryana</span></p>
+          <p class="edu-duration">June 2024 - Dec 2024 • Completed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements & Certifications -->
+  <section id="achievements" class="achievements section-padding" aria-label="Achievements and Certifications">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal-text">Achievements & Certifications</h2>
+        <p class="section-subtitle">Recognition for excellence and continuous learning</p>
+      </div>
+      <div class="achievements-content">
+        <div class="certifications-grid">
+          <h3 class="subsection-title">Certifications</h3>
+          <div class="cert-grid">
+            <div class="cert-card glass-morph magnetic"><div class="cert-icon">🏆</div><h4>HTML5</h4><p>MIND LUSTER - 2024</p></div>
+            <div class="cert-card glass-morph magnetic"><div class="cert-icon">🎨</div><h4>Frontend Development</h4><p>MIND LUSTER - 2024</p></div>
+            <div class="cert-card glass-morph magnetic"><div class="cert-icon">☕</div><h4>Java Essentials</h4><p>MIND LUSTER - 2024</p></div>
+            <div class="cert-card glass-morph magnetic"><div class="cert-icon">⚡</div><h4>JavaScript</h4><p>WEBBERZ - 2024</p></div>
+            <div class="cert-card glass-morph magnetic"><div class="cert-icon">🎨</div><h4>Figma Design</h4><p>COURSERA - 2024</p></div>
+            <div class="cert-card glass-morph magnetic"><div class="cert-icon">🤖</div><h4>Python for ML</h4><p>GREAT LEARNING - 2024</p></div>
+            <div class="cert-card glass-morph magnetic"><div class="cert-icon">🔐</div><h4>Cyber Security</h4><p>ICT ACADEMY - 2024</p></div>
+            <div class="cert-card glass-morph magnetic featured-cert"><div class="cert-icon">🚀</div><h4>Full Stack Development</h4><p>DUCAT IT Training Institute - 2024</p></div>
+          </div>
+        </div>
+        <div class="achievements-list">
+          <h3 class="subsection-title">Major Achievements</h3>
+          <div class="achievement-items">
+            <div class="achievement-item glass-morph magnetic"><div class="achievement-icon">🎯</div><div class="achievement-content"><h4>Tech Fest 2024 Management</h4><p>Handled "Tech Fest 2024" at Global Institute of Technology and Management</p></div></div>
+            <div class="achievement-item glass-morph magnetic"><div class="achievement-icon">🏐</div><div class="achievement-content"><h4>Sports Excellence 2023</h4><p>1st in Volleyball & Badminton, 2nd in Football & Basketball</p></div></div>
+            <div class="achievement-item glass-morph magnetic"><div class="achievement-icon">🏆</div><div class="achievement-content"><h4>Sports Champion 2022</h4><p>1st in Volleyball & Badminton</p></div></div>
+            <div class="achievement-item glass-morph magnetic"><div class="achievement-icon">👥</div><div class="achievement-content"><h4>Team Leadership</h4><p>Managed Girls Basketball team with 1st for two consecutive years</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact section-padding" aria-label="Contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal-text">Let's Create Something Amazing Together</h2>
+        <p class="section-subtitle">Ready to bring your ideas to life? I'm passionate about building innovative solutions, researching new technologies, and training AI systems for the future.</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-card glass-morph">
+            <h3>Get In Touch</h3>
+            <p>Ready to bring your ideas to life? I'm passionate about building innovative solutions and training AI systems for the future. Available for freelance projects and collaborations.</p>
+            <div class="contact-methods">
+              <div class="contact-method magnetic"><div class="method-icon">📧</div><div class="method-info"><h4>Email</h4><a href="mailto:mrabhi837@gmail.com">mrabhi837@gmail.com</a></div></div>
+              <div class="contact-method magnetic"><div class="method-icon">📱</div><div class="method-info"><h4>Phone</h4><span>+91 7814970934</span></div></div>
+              <div class="contact-method magnetic"><div class="method-icon">📍</div><div class="method-info"><h4>Location</h4><span>Amritsar, Punjab, 143001</span></div></div>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/Developer-boy1" target="_blank" class="social-link magnetic"><span>GitHub</span><div class="social-glow"></div></a>
+              <a href="https://www.linkedin.com/in/abhi-2512-giri" target="_blank" class="social-link magnetic"><span>LinkedIn</span><div class="social-glow"></div></a>
+              <a href="mailto:mrabhi837@gmail.com" class="social-link magnetic"><span>Email</span><div class="social-glow"></div></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form glass-morph" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <div class="input-container"><input type="text" id="name" name="name" class="form-input magnetic" required aria-required="true" /><div class="input-glow"></div></div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <div class="input-container"><input type="email" id="email" name="email" class="form-input magnetic" required aria-required="true" /><div class="input-glow"></div></div>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <div class="input-container"><input type="text" id="subject" name="subject" class="form-input magnetic" required aria-required="true" /><div class="input-glow"></div></div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <div class="input-container"><textarea id="message" name="message" rows="5" class="form-input magnetic" required aria-required="true"></textarea><div class="input-glow"></div></div>
+            </div>
+            <button type="submit" class="btn-3d btn-primary btn-full magnetic"><span>Send Message</span><div class="btn-particles"></div><div class="btn-ripple"></div></button>
+            <p id="form-error" class="sr-only" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text"><p>&copy; 2025 Abhishek Kr. Giri. Crafted with passion and modern web technologies.</p></div>
+        <div class="footer-links">
+          <a href="https://github.com/Developer-boy1" target="_blank" class="magnetic">GitHub</a>
+          <a href="https://www.linkedin.com/in/abhi-2512-giri" target="_blank" class="magnetic">LinkedIn</a>
+          <a href="mailto:mrabhi837@gmail.com" class="magnetic">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top FAB -->
+  <button class="floating-action-btn magnetic" id="back-to-top" aria-label="Back to top">
+    <div class="fab-icon">↑</div>
+    <div class="fab-glow"></div>
+    <div class="progress-ring"><svg class="progress-svg"><circle class="progress-circle" cx="25" cy="25" r="20"></circle></svg></div>
+  </button>
+
+  <!-- Success Modal -->
+  <div class="modal hidden" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close="modal"></div>
+    <div class="modal-content glass-morph">
+      <div class="modal-header">
+        <div class="success-icon" aria-hidden="true">✨</div>
+        <h3 id="modal-title">Message Sent!</h3>
+        <button class="modal-close magnetic" id="modal-close" aria-label="Close modal">×</button>
+      </div>
+      <div class="modal-body">
+        <p>Thank you for reaching out! Your message has been prepared in your email client. I'll get back to you as soon as possible.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
