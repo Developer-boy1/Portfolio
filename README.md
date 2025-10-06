@@ -3,7 +3,7 @@
 A self-contained, dependency-free portfolio featuring glassmorphism, 3D tilt effects, smooth animations, and a refined “Scroll to Explore” CTA.
 
 ## Live Demo
-- GitHub Pages: https://developer-boy1.github.io/portfolio-website/
+- GitHub Pages: https://developer-boy1.github.io/Portfolio/
 
 ## Features
 - 100% vanilla JS (no CDNs)
